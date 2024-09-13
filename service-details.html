@@ -26,6 +26,26 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .card {
+  margin-bottom: 20px;
+}
+
+#service-content .col-md-6 {
+  padding: 15px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+.service-link.active {
+  font-weight: bold;
+  color: #007bff; /* Example color for active link */
+}
+
+
+  </style>
 
   <!-- =======================================================
   * Template Name: KnightOne
@@ -49,31 +69,16 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-         <li class="dropdown">
-  <a href="#about1">
-    <span>Dropdown</span>
-    <i class="bi bi-chevron-down toggle-dropdown"></i>
-  </a>
-  <ul>
-    <li><a href="#about1">About 1</a></li>
-    <li>
-      <a href="#about2">About 2</a>
-      <ul>
-        <li><a href="gallery-details.html">About 3</a></li>
-      </ul>
-    </li>
-  </ul>
-</li>
-
-          <li><a href="#services">Services</a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="#services" class="active">Services</a></li>
           <li class="dropdown">
-              <a href="#support1">
+              <a href="index.html">
               <span>Dropdown</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i>
               </a>
           <ul>
-            <li><a href="#support1">Support 1</a></li> <!-- Link to the Call to Action Section -->
+            <li><a href="index.html">Support 1</a></li> <!-- Link to the Call to Action Section -->
             <li><a href="#support2">Support 2</a></li>
             <li><a href="#support3">Support 3</a></li>
           </ul>
@@ -106,54 +111,88 @@
   </div>
 </div><!-- End Page Title -->
 
-<!-- Service Details Section -->
 <section id="service-details" class="service-details section">
-
   <div class="container">
-
     <div class="row gy-4">
-
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="services-list">
-          <a href="index.html" class="active">Awareness Campaigns</a>
-          <a href="index.html">Action Hub</a>
-          <a href="index.html">Monitoring & Reporting</a>
-          <a href="index.html">Community Engagement</a>
-          <a href="index.html">Policy & Advocacy</a>
+          <a href="#awareness-campaign" class="service-link" onclick="showSection('awareness-campaign')">Awareness Campaigns</a>
+          <a href="#actionhub" class="service-link" onclick="showSection('actionhub')">Action Hub</a>
+          <a href="#monitoring" class="service-link" onclick="showSection('monitoring')">Monitoring & Reporting</a>
+          <a href="#engagement" class="service-link" onclick="showSection('engagement')">Community Engagement</a>
+          <a href="#policy" class="service-link" onclick="showSection('policy')">Policy & Advocacy</a>
+          <a href="#event" class="service-link" onclick="showSection('event')">Events & Workshops</a>
         </div>
-
-        <h4>Protecting Marine Life</h4>
-        <p>We are dedicated to safeguarding marine ecosystems from the dangers of pollution and overfishing.</p>
       </div>
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" id="service-content">
+          <div class="col-md-6" id="awareness-campaign" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Awareness Campaign Image">
+              <div class="card-body">
+                <h4 class="card-title">Awareness Campaigns</h4>
+                <p class="card-text">We raise public understanding of marine life threats like pollution and overfishing, encouraging action to protect ocean ecosystems. Join us in preserving biodiversity for future generations.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="actionhub" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
+              <div class="card-body">
+                <h4 class="card-title">Action Hub</h4>
+                <p class="card-text">The hub empowers communities to protect marine life and promote a healthier ocean ecosystem by reducing pollution and encouraging sustainability.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="monitoring" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
+              <div class="card-body">
+                <h4 class="card-title">Monitoring & Reporting</h4>
+                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="engagement" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
+              <div class="card-body">
+                <h4 class="card-title">Community Engagement</h4>
+                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="policy" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
+              <div class="card-body">
+                <h4 class="card-title">Policy & Advocacy</h4>
+                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" id="event" style="display:none;">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
+              <div class="card-body">
+                <h4 class="card-title">Events & Workshops</h4>
+                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+              </div>
+            </div>
+          </div>
 
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/img/our-team.jpg" alt="Our Team" class="img-fluid services-img">
-        <h3>Meet the Team Behind Our Conservation Efforts</h3>
-        <p>
-          Our team is composed of passionate marine biologists, environmental scientists, and policy advocates working together to protect the ocean.
-        </p>
-        <ul>
-          <li><i class="bi bi-check-circle"></i> <span>Expertise in marine conservation.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Commitment to sustainable practices.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Collaborative approach to environmental protection.</span></li>
-        </ul>
-        <p>
-          We work tirelessly to implement effective strategies for conserving marine habitats, ensuring that future generations can enjoy a healthy ocean.
-        </p>
+          <!-- Add more sections as needed -->
+        </div>
       </div>
-
     </div>
-
   </div>
-
-</section><!-- /Service Details Section -->
+</section>
 
   </main>
 
-  
   <footer id="footer" class="footer dark-background">
     <div class="container">
-        <h3 class="sitename">EcoOceanAction.org</h3>
+        <h3 class="sitename">marineaction.org</h3>
         <p>Protecting our oceans, one ripple at a time. Join us in the fight against pollution and preserve marine life for future generations.</p>
      <div class="social-links d-flex justify-content-center">
         <a href=" https://www.x.com/i_vickii/" target="_blank"><i class="bi bi-twitter-x"></i></a>
@@ -163,7 +202,7 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">EcoOceanAction.org</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">marineaction.org</strong> <span>All Rights Reserved</span>
         </div>
       </div>
     </div>
@@ -187,6 +226,31 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  function showSection(sectionId) {
+  // Get all sections
+  const sections = document.querySelectorAll('#service-content .col-md-6');
+  
+  // Hide all sections
+  sections.forEach(section => {
+    section.style.display = 'none';
+  });
+
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+
+  // Optionally, add an 'active' class to the clicked link and remove it from others
+  const links = document.querySelectorAll('.service-link');
+  links.forEach(link => {
+    if (link.getAttribute('href') === `#${sectionId}`) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+</script>
 
 </body>
 
