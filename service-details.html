@@ -110,7 +110,6 @@
     </nav>
   </div>
 </div><!-- End Page Title -->
-
 <section id="service-details" class="service-details section">
   <div class="container">
     <div class="row gy-4">
@@ -126,7 +125,7 @@
       </div>
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
         <div class="row" id="service-content">
-          <div class="col-md-6" id="awareness-campaign" style="display:none;">
+          <div class="col-md-8" id="awareness-campaign" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Awareness Campaign Image">
               <div class="card-body">
@@ -135,7 +134,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6" id="actionhub" style="display:none;">
+          <div class="col-md-8" id="actionhub" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
               <div class="card-body">
@@ -144,49 +143,48 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6" id="monitoring" style="display:none;">
+          <div class="col-md-8" id="monitoring" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
               <div class="card-body">
                 <h4 class="card-title">Monitoring & Reporting</h4>
-                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation; since it helps us safeguard Marine life...</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6" id="engagement" style="display:none;">
+          <div class="col-md-8" id="engagement" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
               <div class="card-body">
                 <h4 class="card-title">Community Engagement</h4>
-                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+                <p class="card-text">We work closely with coastal communities to promote marine conservation efforts. By engaging local fishermen, schools, and environmental groups...</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6" id="policy" style="display:none;">
+          <div class="col-md-8" id="policy" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
               <div class="card-body">
                 <h4 class="card-title">Policy & Advocacy</h4>
-                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+                <p class="card-text">Our team advocates for stronger regulations on pollution, overfishing, and habitat preservation...</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6" id="event" style="display:none;">
+          <div class="col-md-8" id="event" style="display:none;">
             <div class="card">
               <img class="card-img-top" src="assets/img/awareness.jpg" height="350" alt="Action Hub Image">
               <div class="card-body">
                 <h4 class="card-title">Events & Workshops</h4>
-                <p class="card-text">In our Organisation feel welcomed report any bad action on Marine conservation;since it can helps us in safeguarding Marine life and also helps the Fishermans get income from them since the relay on the fishes just imagine someone polluting the ocean;how would the fishermans survice.Therefore dont look at any bad thing happening you have to report. </p>
+                <p class="card-text">We regularly host events and workshops to engage the community and raise awareness about ocean conservation...</p>
               </div>
             </div>
           </div>
-
-          <!-- Add more sections as needed -->
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
   </main>
 
@@ -226,31 +224,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
+<script>
   function showSection(sectionId) {
-  // Get all sections
-  const sections = document.querySelectorAll('#service-content .col-md-6');
-  
-  // Hide all sections
-  sections.forEach(section => {
-    section.style.display = 'none';
-  });
+    // Hide all sections first
+    var sections = document.querySelectorAll('#service-content > div');
+    sections.forEach(function(section) {
+      section.style.display = 'none';
+    });
 
-  // Show the selected section
-  document.getElementById(sectionId).style.display = 'block';
-
-  // Optionally, add an 'active' class to the clicked link and remove it from others
-  const links = document.querySelectorAll('.service-link');
-  links.forEach(link => {
-    if (link.getAttribute('href') === `#${sectionId}`) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-}
-
+    // Show the clicked section
+    document.getElementById(sectionId).style.display = 'block';
+  }
 </script>
+
 
 </body>
 
